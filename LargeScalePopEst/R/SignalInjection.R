@@ -66,7 +66,7 @@ injectSignals <- function(connectionDetails,
     }
     summ <- MethodEvaluation::injectSignals(connectionDetails = connectionDetails,
                                             cdmDatabaseSchema = cdmDatabaseSchema,
-                                            oracleTempSchema = cdmDatabaseSchema,
+                                            oracleTempSchema = oracleTempSchema,
                                             outcomeDatabaseSchema = workDatabaseSchema,
                                             outcomeTable = studyCohortTable,
                                             outputDatabaseSchema = workDatabaseSchema,
