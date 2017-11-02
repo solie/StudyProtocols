@@ -157,7 +157,7 @@ fetchAllDataFromServer <- function(connectionDetails,
     filterConcepts$exposureConceptId <- NULL
     saveRDS(filterConcepts, file.path(workFolder, "filterConceps.rds"))
 
-    DBI::dbDisconnect(conn)
+    DatabaseConnector::disconnect(conn)
 }
 
 constructCohortMethodDataObject <- function(targetId,
