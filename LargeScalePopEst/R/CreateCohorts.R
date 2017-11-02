@@ -148,5 +148,5 @@ createCohorts <- function(connectionDetails,
     write.csv(counts, file.path(workFolder, "cohortCounts.csv"), row.names = FALSE)
     print(counts)
 
-    RJDBC::dbDisconnect(conn)
+    DatabaseConnector::disconnect(conn)
 }
