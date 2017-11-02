@@ -70,7 +70,7 @@ execute <- function(connectionDetails,
                       exposureCohortSummaryTable = exposureCohortSummaryTable,
                       workFolder = workFolder)
 
-        filterByExposureCohortsSize(workFolder = workFolder, minCohortSize=500)
+        filterByExposureCohortsSize(workFolder = workFolder, minCohortsSize=500)
     }
     if (fetchAllDataFromServer) {
         fetchAllDataFromServer(connectionDetails = connectionDetails,
